@@ -1,6 +1,6 @@
 <app>
 <env>
-app.title=ETRACS 2.5 build 05 20200203_1730 (Municipality of Garcia Hernandez)
+app.title=ETRACS 2.5 build 05 20200203_1730 (MUNICIPALITY OF GARCIA HERNANDEZ)
 app.host=192.168.254.121:8070
 app.cluster=osiris3
 app.context=etracs25
@@ -8,6 +8,7 @@ app.help=http://192.168.254.121:8080/help
 app.loader=com.rameses.osiris2.client.OsirisAppLoader
 readTimeout=300000
 connectionTimeout=5000
+filemgmt.enabled=false
 
 ws.host=192.168.254.121:8060
 #res.host=192.168.254.121
@@ -21,6 +22,13 @@ entity.app.context=etracs25
 </env>
 <modules> 
 	<!-- custom -->
+	<module file="custom/gov-lgu-gh-bpls-permit.jar" version="1.02"/>
+	<module file="custom/gov-lgu-gh-business_closure_certificate.jar" version="1.01"/>
+	<module file="custom/gov-lgu-gh-logo.jar" version="1.6"/>
+	<module file="custom/gov-lgu-gh-af56.jar" version="1.18"/>
+	<module file="custom/gov-lgu-gh-recibo.jar" version="1.22"/>
+	<module file="custom/gov-lgu-gh-rcd-report.jar" version="1.0"/>
+	<module file="custom/gov-lgu-gh-rcdmain-report.jar" version="1.1"/>
 
 	<!-- core -->
 	<module file="core/osiris2-client-themes.jar" version="2.50"/>
