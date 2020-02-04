@@ -15,4 +15,4 @@ services:
       - ./env.conf
       - ../_custom/env.conf
     ports:
-      - "25:25"
+      - "26:25"
