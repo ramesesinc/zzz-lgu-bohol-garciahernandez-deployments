@@ -40,3 +40,5 @@ services:
     volumes:
       - ../_res/connections:/apps/etracs25/connections/ext
       - ./modules:/apps/etracs25/modules
+
+      - ./dev/schema/remittance.xml:/services/modules/etracs/rameses-gov-treasury-services.jar/schema/remittance.xml
