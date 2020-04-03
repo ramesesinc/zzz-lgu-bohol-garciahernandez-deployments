@@ -41,4 +41,5 @@ services:
       - ../_res/connections:/apps/etracs25/connections/ext
       - ./modules:/apps/etracs25/modules
 
+      - ./dev_modules/rptis/rameses-gov-etracs-rptis-landtax-report-services.jar:/services/modules/etracs/rameses-gov-etracs-rptis-landtax-report-services.jar
       - ./dev/schema/remittance.xml:/services/modules/etracs/rameses-gov-treasury-services.jar/schema/remittance.xml
