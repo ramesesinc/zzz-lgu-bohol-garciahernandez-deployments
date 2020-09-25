@@ -7,3 +7,4 @@ sleep 1
 docker-compose -f docker-compose.yml -f docker-compose-test.yml up -d
 docker-compose logs -f etracs25-server
 cd $RUN_DIR
+
