@@ -21,7 +21,7 @@ services:
 
 
   queue-server:
-    image: ramesesinc/queue-server:255.02.002
+    image: ramesesinc/queue-server:2.5.02.01
     container_name: queue-server
     restart: always
     logging: 
@@ -41,6 +41,7 @@ services:
       - ./dev_src/files/queueing.pg:/webroot/files/queueing.pg
       - ./dev_src/files/queuenumber.pg:/webroot/files/queuenumber.pg
 
+      - ../_custom/queue/res:/webroot/res/queue/res
       - ../_custom/queue/lgu-logo.png:/webroot/res/images/lgu-logo.png
       - ../_custom/queue/files/queue.pg/content:/webroot/files/queue.pg/content
       - ../_custom/queue/files/queue.pg/style_custom:/webroot/files/queue.pg/style_custom
@@ -48,3 +49,4 @@ services:
       - ../_custom/queue/files/queueing.pg/style_custom:/webroot/files/queueing.pg/style_custom
       - ../_custom/queue/files/queuenumber.pg/content:/webroot/files/queuenumber.pg/content
       - ../_custom/queue/files/queuenumber.pg/style_custom:/webroot/files/queuenumber.pg/style_custom
+      - ../_custom/queue/queue-custom.css:/webroot/themes/default/css/default/queue-custom.css
