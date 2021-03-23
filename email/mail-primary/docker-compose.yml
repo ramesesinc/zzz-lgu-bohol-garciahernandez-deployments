@@ -2,9 +2,9 @@ version: "3"
 
 services:
 
-  gdx-mail-server: 
-    image: "ramesesinc/mail-server:latest"
-    container_name: gdx-mail-server
+  mail-primary: 
+    image: ramesesinc/mail-server:latest
+    container_name: mail-primary
     restart: always
     logging: 
       driver: "json-file"
